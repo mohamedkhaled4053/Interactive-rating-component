@@ -27,6 +27,10 @@ main{
     border-radius: 30px;
     width: 410px;
 }
+
+h1{
+    font-size: 25px;
+}
 /*end main styles */
 
 /* start rating section style */
@@ -75,6 +79,11 @@ li:hover{
     color: white;
 }
 
+.active{
+    background-color: #7c8898;
+    color: white;
+}
+
 button{
     color: var(--orange);
     font-size: 15px;
@@ -89,14 +98,22 @@ button{
 /* end rating section style */
 
 /* start thank section style */
-
-
-
-
-
-
-
-/* end thank section style */
 .thank{
+    text-align: center;
     display: none;
 }
+
+.rate{
+    margin: 30px auto;
+    color: var(--orange);
+    background-color: #262f38;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.thank h1{
+    margin-bottom: 15px;
+}
+
+/* end thank section style */
