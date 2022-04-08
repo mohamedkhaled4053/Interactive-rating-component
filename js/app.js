@@ -16,10 +16,13 @@ for (const li of list) {
 }
 
 
-submit.onclick =()=>{
+submit.onclick =(e)=>{
+    e.target.nextSibling.remove()
     let rate = document.querySelector('.active')
     if (!rate){
-        alert('please select a rate');
+        let alert = document.createElement('p')
+        alert.textContent = 'please select a rate first'
+        e.target.after(alert)
         return
     }
 
