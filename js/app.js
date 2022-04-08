@@ -17,10 +17,15 @@ for (const li of list) {
 
 
 submit.onclick =()=>{
+    let rate = document.querySelector('.active')
+    if (!rate){
+        alert('please select a rate');
+        return
+    }
+
     rateSection.style.display ='none'
     thankYou.style.display ='block'
 
-    let rate = document.querySelector('.active').dataset.value
-    pragraphOfRate.textContent = `You selected ${rate} out of 5`
-
+    console.log(rate);
+    pragraphOfRate.textContent = `You selected ${rate.dataset.value} out of 5`
 }
