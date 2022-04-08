@@ -20,7 +20,7 @@ submit.onclick =()=>{
     rateSection.style.display ='none'
     thankYou.style.display ='block'
 
-    let rate = document.querySelector('.active').value
+    let rate = document.querySelector('.active').dataset.value
     pragraphOfRate.textContent = `You selected ${rate} out of 5`
 
 }
